@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ChordSmith Studio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChordSmith Studio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>ChordSmith Studio</h1>
-    <div class="controls">
-      <button id="playNoteButton">Play Note</button>
-      <button id="playChordButton">Play Chord</button>
-      <select id="selectChord">
-        <option value="Cmaj7">Cmaj7</option>
-        <option value="Dmin7">Dmin7</option>
-        <option value="G7">G7</option>
-        <option value="Fmaj7">Fmaj7</option>
-        <option value="Amin7">Amin7</option>
-      </select>
-      <button id="playChordProgressionButton">Play Chord Progression</button>
-      <select id="selectScale">
-        <option value="C major">C Major Scale</option>
-        <option value="D minor">D Minor Scale</option>
-        <option value="G major">G Major Scale</option>
-        <option value="A minor">A Minor Scale</option>
-      </select>
-      <button id="playScaleButton">Play Scale</button>
+    <div class="container">
+        <h1>ChordSmith Studio</h1>
+        <div class="controls">
+            <select id="chordType">
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <!-- Add more chord types as needed -->
+            </select>
+            <button id="playChord">Play Chord</button>
+        </div>
+        <div class="controls">
+            <select id="scaleType">
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+                <!-- Add more scale types as needed -->
+            </select>
+            <button id="playScale">Play Scale</button>
+        </div>
+        <div class="controls">
+            <button id="playNote">Play Note</button>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js" type="module"></script>
 </body>
 </html>
